@@ -1,177 +1,328 @@
-
-</html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* Định dạng cho đường kẻ chấm */
-        .dotted-line {
-          border-top: 1px dotted #000; /* Màu sắc và loại đường chấm */
-          width: 100%; /* Chiều rộng của đường kẻ chấm */
-          margin: 20px 0; /* Khoảng cách từ phía trên và phía dưới đường kẻ chấm */
-        }
-        select {
-          width: 350px; /* Đặt chiều cao mong muốn */
-        }
-        #cents {
-          width: 30px;
-          height: 15px;
+    <title>Bai tap deha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-        }
-        #dollar {
-          width: 75px;
-          height: 15px;
-        
-        }
-        .label {
-          font-weight: bold;
-         
-        }
-        table,th,td {
-          font-family: arial, sans-serif;
-          border-collapse:collapse;
-          width: 100%;
-          border: 1px solid #ada8a8;
-          text-align: center;
-        }
-        th:first-child,
-        td:first-child {
-          width: 40%;
-        }
-        th:nth-child(2),
-        td:nth-child(2) {
-          width: 15%;
-        }
-        th:nth-child(3),
-        td:nth-child(3) {
-          width: 15%;
-        }
-        th:nth-child(4),
-        td:nth-child(4) {
-          width: 15%;
-        }
-        th:nth-child(5),
-        td:nth-child(5) {
-          width: 20%;
-        }
-        tr:nth-child(even) {
-        background-color: #dddddd;
-        }
-
-
-        
-    </style>
 </head>
+<style>
+    .progress-bar {
+    height: 20px;
+    width: 300px;
+    background-color: rgb(156, 153, 153);
+    }
+    .container {
+    display: flex;
+    justify-content: space-between;
+    }
+    .question{
+    margin-bottom: 10px;
+    }
+
+</style>
 <body>
-    <header>
-        <h1>Market Research Survey</h1>
-    </header>
-    <main>
-        <h4>Please take a few moments to complete this satisfaction survey.</h4>
-        <form action="/submit" method="post">
-        <div class="dotted-line"></div>
+    <div class="swapper">
+        <div class="header">
+           <a href="" class="#LOGO">LOGO</a>
+           <div id="Menu">
+                <div class="item">
+                    <a href="#ABOUT">ABOUT</a>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#TEAM">TEAM</a>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="#WORK">WORK</a>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <a href="#PRICING">PRICING</a>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#CONTACT">CONTACT</a>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+
+    <Main>
+        <div id="Top">
+            <h1>Start something that matters</h1>
+            <p>Stop wasting valuable time with projects that just isn't you.</p>
+        </div>
+        <div class="knot">
+            <a href="#ABOUT" id="about">Learn more and start today</a>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+           
+        <div id="ABOUT">
+            <h1>ABOUT THE COMPANY</h1>
+            <h2>Key features of our company</h2>
+        
             <div>
-              <label for="age">What is your age range?</label><br>
-              <select name="age" id="age" >
-                <option value="18-24">18-24</option>
-                <option value="25-34">25-34</option>
-                <option value="35-44">35-44</option>
-                <option value="45-54">45-54</option>
-                <option value="55-64">55-64</option>
-                <option value="65+">65+</option>
-              </select>
+                <i class="fa-solid fa-desktop"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
             </div>
             <div>
-              <label for="income" class="label">What is your yearly income range?</label><br>
-              <select name="income" id="income">
-                <option value="0-25,000">$0-$25,000</option>
-                <option value="25,000-50,000">$25,000-$50,000</option>
-                <option value="50,000-75,000">$50,000-$75,000</option>
-                <option value="75,000-100,000">$75,000-$100,000</option>
-                <option value="100,000+">$100,000+</option>
-              </select>
+                <i class="fa-solid fa-heart"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
             </div>
             <div>
-              <label for="gender" class="label">Gender</label><br>
-              <input type="radio" name="gender" id="male" value="male">
-              <label for="male">Male</label><br>
-              <input type="radio" name="gender" id="female" value="female">
-              <label for="female">Female</label><br>
+                <i class="fa-regular fa-gem"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
             </div>
             <div>
-              <label for="products" class="label">Which of the following products have you purchased in the last 2 months? Please check all that apply.</label><br>
-              <input type="checkbox" name="products1" value="product1">
-              <label for="product1">Product 1</label><br>
-              <input type="checkbox" name="products2" value="product2">
-              <label for="product2">Product 2</label><br>
-              <input type="checkbox" name="products3" value="product3">
-              <label for="product3">Product 3</label><br>
+                <i class="fa-solid fa-gear"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            </div>
+        </div>
+        
+        <div id="Product">
+            <div>
+                <h2>We Know Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <br>tempor incididunt ut labore et dolore.</p>
+                <img src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="ảnh">
+            </div>
+        
+            <div class="knot">
+                <i class="fa-solid fa-calendar-days"></i>
+                <a href="#WORK" id="work">view our work</a>
+            </div>
+        </div>
+          
+        <div id="TEAM">
+            <h1>THE TEAM</h1>
+            <h2>The ones who runs this company</h2>
+            <div class="person">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Jonh Doe">
+                <h3>Jonh Doe</h3>
+                <h4>CEO & Founder</h4>
+                <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
+            </div>
+            <div class="person">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Anja Doe">
+                <h3>Anja Doe</h3>
+                <h4>Art Director</h4>
+                <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
+            </div>
+            <div class="person">
+                <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike Ross">
+                <h3>Mike Ross</h3>
+                <h4>Web Designer</h4>
+                <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
+            </div>
+            <div class="person">
+                <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan Star">
+                <h3>Dan Star</h3>
+                <h4>Designer</h4>
+                <P>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</P>
+            </div>
+        </div>
+        <div id="data">
+            <table>
+                <tr><th>14+</th>
+                    <th>55+</th>
+                    <th>89+</th>
+                    <th>55+</th>
+                </tr>
+                <tr>
+                    <td>Partners</td>
+                    <td>Projects done</td>
+                    <td>Happy Clients</td>
+                    <td>Meetings</td>
+                </tr> 
+            </table>
+        </div>
+        <div id="WORK">
+            <h2>OUR WORK</h2>
+            <h3>What we've done for people</h3>
+            <div id="Photo">
+                <img src="https://www.w3schools.com/w3images/tech_mic.jpg" alt="ảnh">
+                <img src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="ảnh">
+                <img src="https://www.w3schools.com/w3images/tech_drone.jpg" alt="ảnh">
+                <img src="https://www.w3schools.com/w3images/tech_sound.jpg" alt="ảnh">
+                <img src="https://www.w3schools.com/w3images/tech_tablet.jpg" alt="ảnh">
+                <img src="https://www.w3schools.com/w3images/tech_camera.jpg" alt="ảnh">
+                <img src="https://www.w3schools.com/w3images/tech_typewriter.jpg" alt="ảnh">
+                <img src="https://www.w3schools.com/w3images/tech_tableturner.jpg" alt="ảnh">
+            </div>   
+        </div>
+        <div id="Skill">
+            <h2>Our Skill</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore.<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore.
+            </p>
+            <div>
+                <i class="fa-solid fa-camera">  Photography</i>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"
+                     style="width: 90%;
+                            height: 20px;
+                            width:270px;
+                            color: #fcfbfb;;
+                            background-color: rgb(59, 59, 59);" > 90%
+                    </div>
+                </div>
+                <br>
+                <i class="fa-solid fa-desktop">  Web Design</i>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"
+                     style="width: 85%;
+                            height: 20px;
+                            width:255px;
+                            color: #fcfbfb;;
+                            background-color: rgb(59, 59, 59);" > 85%</div><br>
+                    </div>
+                </div>
+                <br>
+                <i class="fa-regular fa-image">   Photo Shop</i>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"
+                     style="width: 75%;
+                            height: 20px;
+                            width:220px;
+                            color: #fcfbfb;;
+                            background-color: rgb(59, 59, 59);" > 75%
+                    </div>
+                </div>
+            </div> 
+        <div id="PRICING">
+            <div>
+                <h2>PRICING</h2>
+                <P>Choose a pricing plan that fits your needs</P>
+            </div>
+            <div class="container">
+                <table>
+                    <tr>
+                        <th>Basic</th>
+                    </tr>
+                    <tr>
+                        <td>10GB Storage</td>
+                    </tr>
+                    <tr>
+                        <td>10 Emails</td>
+                    </tr>
+                    <tr>
+                        <td>10 Domains</td>
+                    </tr>
+                    <tr>
+                        <td>Endless support</td>         
+                    </tr>
+                    <tr>
+                        <td>$ 10<br> A Month</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">SIGN UP</a></td>                    
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Pro</th>
+                    </tr>
+                    <tr>
+                        <td>25GB Storage</td>                    
+                    </tr>
+                    <tr>
+                        <td>25 Emails</td>
+                    </tr>
+                    <tr>
+                        <td>25 Domains</td>
+                    </tr>
+                    <tr>
+                        <td>Endless support</td>
+                    </tr>
+                    <tr>
+                        <td>$ 25<br> A Month</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">SIGN UP</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Premium</th>
+                    </tr>
+                    <tr>
+                        <td>50GB Storage</td>
+                    </tr>
+                    <tr>
+                        <td>50 Emails</td>
+                    </tr>
+                    <tr>
+                        <td>50 Domains</td>
+                    </tr>
+                    <tr>
+                        <td>Endless support</td>
+                    </tr>
+                    <tr>
+                        <td>$ 50<br> A Month</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">SIGN UP</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+        <div id="CONTACT">
+            <div>
+                <h2>CONTACT</h2>
+                <p>
+                    Lets get in touch. Send us a message:
+                </p>
             </div>
             <div>
-              <label for="frequency" class="label">How often would you use our new product?</label><br>
-              <input type="radio" name="frequency" id="daily" value="daily"
-              <label for="daily">Daily</label><br>
-              <input type="radio" name="frequency" id="weekly" value="weekly"
-              <label for="weekly">Weekly</label><br>
-              <input type="radio" name="frequency" id="monthly" value="monthly">
-              <label for="monthly">Monthly</label><br><br>
-            </div>
-            <div>
-              <label for="price" class="label">What would you pay for the new product?</label><br>
-              <label for="dollar">$</label>
-              <input type="text" name="price" id="dollar">
-              <label for="cents">.</label>
-              <input type="text" name="price" id="cents"><br>
-              <label for="cents" style="word-spacing: 60px; padding-left: 14px;"> Dollar Cents</label>
-              
+                <i class="fa-solid fa-location-dot"> Chicago,US </i>
+                <br>
+                <i class="fa-solid fa-phone"> Phone: +00 151515 </i>
+                <br>
+                <i class="fa-solid fa-envelope"> Email: mail@mail.com </i>
             </div>
             <br>
             <div>
-              <label for="features" class="label">What features would you like to see in our new product?</label><br>
-              <textarea name="features" id="features" cols="30" rows="10" style="width: 100%;"></textarea>
+                <form action="/action_page.php">
+                    <div class="question"> <input type="text" placeholder="Name" id="Name" name="Name" required ><br></div>
+                    <div class="question"><input type="text" placeholder="Email" id="Email" name="Email" required ><br></div>
+                    <div class="question"><input type="text" placeholder="Subject" id="Subject" name="Subject" required><br></div>
+                    <div class="question"><input type="text" placeholder="Message" id="Message" name="Message" required><br></div>
+                    <input type="submit" value="SEND MESSAGE" class="knot">
+                </form>    
             </div>
-          </form>
-          <br>
-          <div>
-            <label style="font-weight: 400;">Please rate your level of agreement with the following statement</label>
-            <table>
-              <tr>
-                <th></th>
-                <th>Strongly Disagree</th>
-                <th>Disagree</th>
-                <th>Agree</th>
-                <th>Strongly Agree</th>
-              </tr>
-              <tr>
-                <th>Our product are priced fairly</th>
-                <td><input type="radio" name="opt1" value="1"><br><label for="1">1</label></td>
-                <td><input type="radio" name="opt1" value="2"><br><label for="2">2</label></td>
-                <td><input type="radio" name="opt1" value="3"><br><label for="3">3</label></td>
-                <td><input type="radio" name="opt1" value="4"><br><label for="4">4</label></td>
-              </tr>
-              <tr>
-                <th>Our products are high quality</th>
-                <td><input type="radio" name="opt2" value="1"><br><label for="1">1</label></td>
-                <td><input type="radio" name="opt2" value="2"><br><label for="2">2</label></td>
-                <td><input type="radio" name="opt2" value="3"><br><label for="3">3</label></td>
-                <td><input type="radio" name="opt2" value="4"><br><label for="4">4</label></td>
-              </tr>
-              <tr>
-                <th>You would recommend our product to a friend or coworker</th>
-                <td><input type="radio" name="opt3" value="1"><br><label for="1">1</label></td>
-                <td><input type="radio" name="opt3" value="2"><br><label for="2">2</label></td>
-                <td><input type="radio" name="opt3" value="3"><br><label for="3">3</label></td>
-                <td><input type="radio" name="opt3" value="4"><br><label for="4">4</label></td>
-              </tr>
-            </table><br>
-            <input type="submit" value="Submit">
-              
-          </div>
-        </main>
+            <div>
+                <img src="https://www.w3schools.com/w3images/map.jpg" alt="ảnh"><br>
+                <a href="#Top">To the Top</a>
+                <div class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <p>power by <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a></p>
+            </div>
+        </div>
+    </Main>
+
+
     
 </body>
 </html>
+
+
