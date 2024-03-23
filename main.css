@@ -1,0 +1,89 @@
+.header{
+    background-color: rgb(165, 158, 158);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    color: aliceblue;
+    margin: 16px;
+}
+#Menu{
+    display: flex;
+}
+.item{
+    margin: 16px;
+    color: rgb(39, 40, 42);
+}
+a{
+    color: aliceblue;
+}
+#Top{
+    background-image: url('https://maccare.vn/wp-content/uploads/2022/11/macbook-2022-logo-phat-sang.jpg');
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    color: aliceblue;
+}
+#container{
+    margin-top: 0%;
+    margin-left: 40px;
+    
+}
+
+.title {
+	font-size: 48px;
+	margin-bottom: 40px;
+	color: #fdfafa;
+    text-align: left;
+}
+
+.subtitle {
+	font-size: 20px;
+	margin-bottom: 40px;
+	color: #f3ebeb;
+}
+.knut{
+    display: block;
+    padding: 8px 15px;
+    ;background-color: rgb(20, 21, 23);
+    color: rgb(167, 156, 156);
+    text-decoration: none;
+    width: 200px;;
+
+}
+.knut:hover{
+    background: #cfcdcd;
+}
+.icon{
+    color: #f5f5f5;
+    margin-top: 580;
+    margin-left: 10px;
+}
+#conten{
+    display: flex;
+}
+.tieude{
+    text-align: center;
+}
+#Product{
+    display: flex;
+}
+.person{
+    display: flex;
+    justify-self: start;
+}
+.progress-bar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+
+}
